@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = 'evil.inc.proto.domain';
+
+message Achievement {
+  string name = 1;
+}

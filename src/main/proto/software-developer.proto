@@ -1,0 +1,24 @@
+syntax = "proto3";
+import "address.proto";
+import "achievement.proto";
+import "grant.proto";
+import "credentials.proto";
+
+
+
+option java_multiple_files = true;
+option java_package = 'evil.inc.proto.domain';
+
+/**
+  Holder object for customers
+*/
+message SoftwareDeveloper {
+  string firstName = 1;
+  string lastName = 2;
+  reserved 3;
+  reserved 'employeeNumber';
+  Address address = 4;
+  repeated Achievement achievements = 5;
+  map<string, Grant> authorizations = 6;
+  Credentials credentials = 7;
+}

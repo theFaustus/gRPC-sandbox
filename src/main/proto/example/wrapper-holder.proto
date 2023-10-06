@@ -1,0 +1,20 @@
+syntax = "proto3";
+import "google/protobuf/wrappers.proto";
+
+package example;
+
+option java_multiple_files = true;
+option java_package = 'evil.inc.proto.examples';
+
+/**
+  Holder object for primitives
+*/
+message WrapperHolder {
+  google.protobuf.Int32Value intValue = 1;
+  google.protobuf.Int64Value longValue = 2;
+  google.protobuf.FloatValue floatValue = 3;
+  google.protobuf.DoubleValue doubleValue = 4;
+  google.protobuf.BoolValue booleanValue = 5;
+  google.protobuf.StringValue stringValue = 6;
+  google.protobuf.BytesValue byteArrayValue = 7;
+}
