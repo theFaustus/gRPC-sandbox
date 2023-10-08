@@ -1,0 +1,30 @@
+### GRPC getById
+GRPC localhost:8082/service.EmployeeService/getById
+
+{
+  "number": "123"
+}
+
+
+### GRPC getById negative
+GRPC localhost:8082/service.EmployeeService/getById
+
+{
+  "number": "-123"
+}
+
+### GRPC getAll
+GRPC localhost:8082/service.EmployeeService/getAll
+
+{}
+
+
+### GRPC deleteEmployee - Unsupported method type "CLIENT_STREAMING" is called
+GRPC localhost:8082/service.EmployeeService/deleteEmployee
+
+{
+  "employeeNumber": {
+    "number": "123"
+  }
+}
+
