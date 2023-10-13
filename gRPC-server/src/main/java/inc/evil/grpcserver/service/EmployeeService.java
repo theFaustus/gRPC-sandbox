@@ -15,12 +15,13 @@ import inc.evil.proto.service.EmployeesCount;
 import inc.evil.proto.service.NoParams;
 import io.grpc.Status;
 import io.grpc.stub.StreamObserver;
+import net.devh.boot.grpc.server.service.GrpcService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Map;
 
-@Service
+@GrpcService
 public class EmployeeService extends EmployeeServiceGrpc.EmployeeServiceImplBase {
 
     @Override

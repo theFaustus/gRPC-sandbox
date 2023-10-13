@@ -14,13 +14,13 @@ GRPC localhost:8082/service.EmployeeService/getById
 }
 
 ### GRPC getAll
-GRPC localhost:8082/service.EmployeeService/getAll
+GRPC localhost:9090/service.EmployeeService/getAll
 
 {}
 
 
 ### GRPC deleteEmployee - Unsupported method type "CLIENT_STREAMING" is called
-GRPC localhost:8082/service.EmployeeService/deleteEmployee
+GRPC localhost:9090/service.EmployeeService/deleteEmployee
 
 {
   "employeeNumber": {

@@ -43,6 +43,7 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'net.devh:grpc-server-spring-boot-starter:2.15.0.RELEASE'
     implementation 'com.google.protobuf:protobuf-java:3.24.4'
     implementation 'com.google.protobuf:protobuf-java-util:3.24.4'
     implementation 'io.grpc:grpc-netty-shaded:1.58.0'
